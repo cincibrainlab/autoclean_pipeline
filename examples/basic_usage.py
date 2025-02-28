@@ -12,8 +12,8 @@ from pathlib import Path
 from autoclean import Pipeline
 
 # Define paths - modify these to match your system
-EXAMPLE_OUTPUT_DIR = Path("C:/Users/Gam9LG/Documents/Autoclean_test")  # Where processed data will be stored
-CONFIG_FILE = Path("configs/autoclean_config.yaml")  # Path to config relative to this example
+EXAMPLE_OUTPUT_DIR = Path("/srv2/RAWDATA/1_NBRT_LAB_STUDIES/MouseData_CCHMC/Autifony/80Hz_ASSR/autoclean_output_NoLossless")  # Where processed data will be stored
+CONFIG_FILE = Path("configs/autoclean_mouse.yaml")  # Path to config relative to this example
 
 # Create output directory if it doesn't exist
 EXAMPLE_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -46,7 +46,7 @@ async def batch_process():
     )
     
     # Example directory path - modify this to point to your EEG files
-    directory = Path("path/to/your/eeg/files")
+    directory = Path("/srv2/RAWDATA/1_NBRT_LAB_STUDIES/MouseData_CCHMC/Autifony/80Hz_ASSR/set_WithTriggers_fixed_02072025")
     
     # Process all files in directory
     await pipeline.process_directory_async(
