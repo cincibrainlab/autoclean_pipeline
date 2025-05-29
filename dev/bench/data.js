@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748521001728,
+  "lastUpdate": 1748542304450,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -93,6 +93,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000533643039586219",
             "extra": "mean: 162.56511242856877 msec\nrounds: 7"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gammohgb@mail.uc.edu",
+            "name": "Gavin Gammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gammohgb@mail.uc.edu",
+            "name": "Gavin Gammoh",
+            "username": "ggammoh"
+          },
+          "distinct": true,
+          "id": "2ad53e21147764331c8691bb97ae56a2c5a872f3",
+          "message": "Fix failed to find bids info in json summary",
+          "timestamp": "2025-05-29T14:09:16-04:00",
+          "tree_id": "9162af5e111524736649d1ef378a0bcd34b7765d",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/2ad53e21147764331c8691bb97ae56a2c5a872f3"
+        },
+        "date": 1748542303215,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 6.062044663407491,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008920047652318285",
+            "extra": "mean: 164.96084333332797 msec\nrounds: 6"
           }
         ]
       }
