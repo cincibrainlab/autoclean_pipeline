@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748520529068,
+  "lastUpdate": 1748521001728,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -62,6 +62,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000656279313761158",
             "extra": "mean: 164.4032701666731 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "distinct": true,
+          "id": "54332719ed34169beec634e450a0b83db40a027d",
+          "message": "Fix integration test MockOperations and method name errors\n\n- Add missing mock methods to MockOperations: mock_ica, mock_apply_ica, mock_autoreject, mock_apply_autoreject, mock_ransac\n- Fix incorrect method names in integration tests: apply_ica → apply_iclabel_rejection\n- Fix class name typo: AutorejectEpochsMixin → AutoRejectEpochsMixin\n- Remove patches for non-existent run_autoreject method\n\nResolves AttributeError exceptions in CI integration tests.",
+          "timestamp": "2025-05-29T08:13:39-04:00",
+          "tree_id": "dbfd9f50f83ea6b5fdf9c461027af57be357ebda",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/54332719ed34169beec634e450a0b83db40a027d"
+        },
+        "date": 1748521000090,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 6.151381345363389,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000533643039586219",
+            "extra": "mean: 162.56511242856877 msec\nrounds: 7"
           }
         ]
       }
