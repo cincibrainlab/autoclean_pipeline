@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748542304450,
+  "lastUpdate": 1748882664297,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -124,6 +124,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008920047652318285",
             "extra": "mean: 164.96084333332797 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gammohgb@mail.uc.edu",
+            "name": "Gavin Gammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gammohgb@mail.uc.edu",
+            "name": "Gavin Gammoh",
+            "username": "ggammoh"
+          },
+          "distinct": false,
+          "id": "1860977ce7c124ed5bec24b6c901d27555a7dcaf",
+          "message": "Add epoch support for import and bids creation",
+          "timestamp": "2025-06-02T12:41:38-04:00",
+          "tree_id": "32700d5081f8e674cbf27ee1d9025bd0937a863a",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/1860977ce7c124ed5bec24b6c901d27555a7dcaf"
+        },
+        "date": 1748882663076,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 5.998644438327438,
+            "unit": "iter/sec",
+            "range": "stddev: 0.006129980369954735",
+            "extra": "mean: 166.7043296666577 msec\nrounds: 6"
           }
         ]
       }
