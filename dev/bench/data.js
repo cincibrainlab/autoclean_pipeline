@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749753722440,
+  "lastUpdate": 1749755373265,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -403,6 +403,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0005740839768509858",
             "extra": "mean: 165.63754100000475 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "distinct": true,
+          "id": "2024ac706fe268df701f728a6425639a71d2cb53",
+          "message": "Fix benchmark script import path and API compatibility\n\nProblem: Performance benchmark script failing with:\n- ModuleNotFoundError: No module named 'tests'\n- TypeError: Pipeline.__init__() got unexpected keyword argument 'autoclean_dir'\n\nSolutions:\n1. Import Path Fix:\n   - Added project root to Python path in benchmark script\n   - Enables direct execution of benchmark_eeg_processing.py\n   - Resolves module import issues when run outside pytest context\n\n2. API Compatibility:\n   - Updated Pipeline initialization to use output_dir parameter\n   - Removed autoclean_config parameter (no longer supported in v2.0.0)\n   - Maintains benchmark functionality with new API\n\nThe performance benchmark can now be executed directly without\nimport errors and is compatible with the v2.0.0 API changes.",
+          "timestamp": "2025-06-12T14:50:21-04:00",
+          "tree_id": "5cfcefe7d4bc19f7ec9a8bc649458ed283ff122b",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/2024ac706fe268df701f728a6425639a71d2cb53"
+        },
+        "date": 1749755371792,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 5.987997328814156,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000834159832559648",
+            "extra": "mean: 167.0007425000032 msec\nrounds: 6"
           }
         ]
       }
