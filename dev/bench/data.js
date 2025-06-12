@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749755373265,
+  "lastUpdate": 1749755430094,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -434,6 +434,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000834159832559648",
             "extra": "mean: 167.0007425000032 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "distinct": true,
+          "id": "fa6455e996a9c642f17d38807ffd61a7070379a6",
+          "message": "Refocus documentation on Python API and GUI navigation workflow\n\nMajor shift in documentation approach:\n\nPython-First Workflow:\n- Emphasized Python API as primary interface over command line\n- Added file manager integration for navigation and path finding\n- Provided complete Python examples for common workflows\n- Integrated subprocess calls for setup within Python environment\n\nConfig Wizard Integration:\n- Prominently featured AutoClean Config Wizard web tool\n- Added step-by-step guide for creating custom tasks via web interface\n- Emphasized drop-and-go workflow for task files\n- Linked to https://cincibrainlab.github.io/Autoclean-ConfigWizard/\n\nGUI-Based File Management:\n- Focused on system file manager (Finder/File Explorer/Files)\n- Removed command-line navigation requirements\n- Added instructions for copying paths from file manager\n- Integrated result viewing through file manager\n\nDrop-and-Go Task Management:\n- Highlighted automatic task discovery in workspace/tasks/ folder\n- Simplified task addition process (drag and drop)\n- Emphasized no registration or configuration needed\n- Clear workspace structure explanation\n\nThe documentation now presents a workflow that combines Python's\npower with familiar GUI tools, making EEG processing more accessible\nwhile leveraging the Config Wizard for custom task creation.",
+          "timestamp": "2025-06-12T15:07:23-04:00",
+          "tree_id": "c4772107abe6145543fdae52d1409a96cf150b1a",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/fa6455e996a9c642f17d38807ffd61a7070379a6"
+        },
+        "date": 1749755429033,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 6.067585045956892,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011064221193770967",
+            "extra": "mean: 164.81021566666718 msec\nrounds: 6"
           }
         ]
       }
