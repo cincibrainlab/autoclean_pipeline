@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749749610917,
+  "lastUpdate": 1749750415133,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -341,6 +341,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008114491256905633",
             "extra": "mean: 165.3471449999889 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "distinct": true,
+          "id": "7770c3ae0a09211b1085393c9e29ca201d51ea27",
+          "message": "Fix Sphinx documentation build by adding missing xarray mock import\n\nProblem: Documentation build was failing with error:\n\"no module named autoclean.mixins.signal_processing.segment_rejection\"\n\nRoot Cause: The segment_rejection module imports xarray, but xarray\nwas not included in the autodoc_mock_imports list, causing Sphinx\nto fail when trying to import the module for documentation generation.\n\nSolution:\n- Added 'xarray' to autodoc_mock_imports list in docs/conf.py\n- Updated version number to 2.0.0 in documentation configuration\n\nThis allows Sphinx to mock the xarray import during documentation\ngeneration, resolving the build failure while maintaining proper\nAPI documentation for the SegmentRejectionMixin class.",
+          "timestamp": "2025-06-12T13:43:30-04:00",
+          "tree_id": "15ec1bccb35e4f21cbccb265272379a29669c4fd",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/7770c3ae0a09211b1085393c9e29ca201d51ea27"
+        },
+        "date": 1749750414141,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 5.939978901076322,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0018062254540816573",
+            "extra": "mean: 168.35076633332827 msec\nrounds: 6"
           }
         ]
       }
