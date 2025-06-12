@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749475728908,
+  "lastUpdate": 1749748282520,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -217,6 +217,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008731660899108858",
             "extra": "mean: 166.00066916667325 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "100084533+ggammoh@users.noreply.github.com",
+            "name": "Gavin Gammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c5395c00d46e29501b3ff8c2a5e8ae48dc87a08d",
+          "message": "Merge pull request #31 from cincibrainlab/Refactor-User-Experience\n\nRefactor user experience",
+          "timestamp": "2025-06-12T13:09:20-04:00",
+          "tree_id": "f4286bf8ecc60d117d355ab9807c1ba8329f48b8",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/c5395c00d46e29501b3ff8c2a5e8ae48dc87a08d"
+        },
+        "date": 1749748281397,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 6.0227965620358885,
+            "unit": "iter/sec",
+            "range": "stddev: 0.002445472851630422",
+            "extra": "mean: 166.0358256666683 msec\nrounds: 6"
           }
         ]
       }
