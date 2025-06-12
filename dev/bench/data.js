@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749748604805,
+  "lastUpdate": 1749748678297,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -279,6 +279,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00080206633324209",
             "extra": "mean: 163.86593416665582 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "100084533+ggammoh@users.noreply.github.com",
+            "name": "Gavin Gammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aee3dbe0cdc9106932dc538f176fd948fcec1a2b",
+          "message": "Delete .DS_Store",
+          "timestamp": "2025-06-12T13:15:59-04:00",
+          "tree_id": "5ce4248d1205bf5c6085b47c295dce3065f645c6",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/aee3dbe0cdc9106932dc538f176fd948fcec1a2b"
+        },
+        "date": 1749748677187,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 6.080647167331386,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007484486306170512",
+            "extra": "mean: 164.45617916667743 msec\nrounds: 6"
           }
         ]
       }
