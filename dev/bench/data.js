@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749750415133,
+  "lastUpdate": 1749753722440,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -372,6 +372,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0018062254540816573",
             "extra": "mean: 168.35076633332827 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "distinct": true,
+          "id": "fb7c6d8982cf0d90729e5be0dc1dcb229476f409",
+          "message": "Improve documentation tone and focus on built-in tasks\n\nMajor improvements to documentation:\n\nContent Changes:\n- Removed excessive emoji usage throughout documentation\n- Eliminated condescending language and overly simplified explanations\n- Balanced focus between built-in tasks and custom tasks\n- Emphasized built-in task capabilities and variety\n- Streamlined section organization with less fragmentation\n\nTone Improvements:\n- Professional, technical writing appropriate for researchers\n- Removed \"beginner-friendly\" assumptions that could be patronizing\n- Direct, informative explanations without excessive hand-holding\n- Clear technical information without oversimplification\n\nStructure Changes:\n- Reorganized getting_started.rst to highlight built-in tasks first\n- Updated first_time_processing.rst with cleaner, more focused content\n- Removed separate \"non-technical\" and \"technical\" user sections\n- Consolidated installation and setup procedures\n\nThe documentation now presents AutoClean as a professional tool\nsuitable for researchers while maintaining accessibility for new users.",
+          "timestamp": "2025-06-12T14:35:52-04:00",
+          "tree_id": "967898dcc501707c65f2342c4cd2b8bc7b3d8ed9",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/fb7c6d8982cf0d90729e5be0dc1dcb229476f409"
+        },
+        "date": 1749753721307,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 6.03727871086888,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0005740839768509858",
+            "extra": "mean: 165.63754100000475 msec\nrounds: 6"
           }
         ]
       }
