@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749755430094,
+  "lastUpdate": 1749817871763,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -465,6 +465,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0011064221193770967",
             "extra": "mean: 164.81021566666718 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "distinct": true,
+          "id": "9439b228d6f37c454d98f1068c04e4b68589a4c4",
+          "message": "Fix inaccurate results tutorial and remove unprofessional language\n\nMajor corrections to understanding_results.rst:\n\nStructural Accuracy Fixes:\n- Corrected output directory structure: task-named folders (e.g., \"RestingEyesOpen\")\n- Fixed directory contents: bids/, flagged/, metadata/, logs/, stage_files/\n- Clarified flagged/ contains data hitting quality flags (e.g., <50% epochs)\n- Corrected stage_files/ purpose: user-marked export data, not derivatives\n- Specified derivatives/ location: contains QC reports and visualizations\n\nContent Improvements:\n- Removed excessive emoji usage throughout document\n- Eliminated condescending \"baby talk\" language\n- Replaced unprofessional tone with technical documentation\n- Removed misleading timestamped folder references\n- Corrected file locations and purposes\n\nProfessional Language Updates:\n- Replaced casual explanations with precise technical descriptions\n- Removed emoji-based quality indicators (traffic lights, checkmarks)\n- Updated section headers to be professional and informative\n- Streamlined quality assessment guidelines\n\nAccuracy Improvements:\n- Fixed directory structure to match actual AutoClean output\n- Corrected file purposes and locations\n- Updated quality thresholds to reflect actual flagging criteria\n- Aligned documentation with current v2.0.0 behavior\n\nThe tutorial now accurately represents AutoClean's output structure\nand maintains a professional tone appropriate for research documentation.",
+          "timestamp": "2025-06-13T08:28:44-04:00",
+          "tree_id": "1131e9cbeb04ec1a163e3beec1e031305f6c6a18",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/9439b228d6f37c454d98f1068c04e4b68589a4c4"
+        },
+        "date": 1749817870120,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 6.074687683676488,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006494934596014507",
+            "extra": "mean: 164.61751650000642 msec\nrounds: 6"
           }
         ]
       }
