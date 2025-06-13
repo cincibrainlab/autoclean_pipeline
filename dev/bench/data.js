@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749817871763,
+  "lastUpdate": 1749819451719,
   "repoUrl": "https://github.com/cincibrainlab/autoclean_pipeline",
   "entries": {
     "Benchmark": [
@@ -496,6 +496,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006494934596014507",
             "extra": "mean: 164.61751650000642 msec\nrounds: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "committer": {
+            "email": "gavingoomoh@gmail.com",
+            "name": "ggammoh",
+            "username": "ggammoh"
+          },
+          "distinct": true,
+          "id": "2dd7560dae8cd77c374b2ff88209ff8f180cf55a",
+          "message": "Fix trailing newline in single file example\n\nRemove extra newline to prevent benchmark action git conflicts.",
+          "timestamp": "2025-06-13T08:55:17-04:00",
+          "tree_id": "e1f0ba4452b70af8db1f6a8189dccb5f11dc416e",
+          "url": "https://github.com/cincibrainlab/autoclean_pipeline/commit/2dd7560dae8cd77c374b2ff88209ff8f180cf55a"
+        },
+        "date": 1749819450631,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "performance/benchmark_eeg_processing.py::TestEEGProcessingBenchmarks::test_synthetic_data_generation_performance",
+            "value": 6.073029472967634,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00041510567404799594",
+            "extra": "mean: 164.6624645000022 msec\nrounds: 6"
           }
         ]
       }
